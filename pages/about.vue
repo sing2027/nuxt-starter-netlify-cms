@@ -1,20 +1,27 @@
 <template>
-  <div
-    class="px-8 mx-auto mt-12 prose sm:px-6 md:px-4 lg:px-2 xl:px-0 xl:prose-xl lg:prose-lg md:prose-md"
-  >
-    <h1>{{ page.title }}</h1>
-    <nuxt-content :document="page" />
+  <div>
+  
+    <AboutMe />
+    <AboutTeam/>
+  
   </div>
 </template>
 
 <script>
-export default {
-  async asyncData({ $content }) {
-    const page = await $content('about').fetch()
 
-    return {
-      page,
-    }
+import AboutMe from '~/components/AboutMe.vue'
+import AboutTeam from '~/components/AboutTeam.vue'
+
+export default {
+  layout: 'special-layout',
+
+  components: {
+
+    AboutMe,
+    AboutTeam,
   },
 }
 </script>
+
+<style scoped>
+</style>

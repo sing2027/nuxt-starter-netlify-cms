@@ -1,0 +1,67 @@
+.title-Animation {
+    font-family: 'Roboto', sans-serif;
+    color: #67272B;
+    font-size: 3rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2), 0 0 25px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1);
+    animation: titleAnimation 2s ease-in-out infinite;
+    margin-bottom: 30px;
+  }
+  
+  @keyframes titleAnimation {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+  .skill-title-Animation {
+    font-family: 'Roboto', sans-serif;
+    color: #67272B;
+    font-size: 3rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2), 0 0 25px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+   }
+  
+  
+   .New-title-Animation {
+    font-family: 'Roboto', sans-serif;
+    color: #67272B;
+    font-size: 3rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2), 0 0 25px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1);
+    animation: bounceAndColorChange 3s ease-in-out infinite;
+    margin-bottom: 30px;
+}
+
+@keyframes bounceAndColorChange {
+    0% {
+        transform: translateY(0);
+        color: #67272B;
+    }
+    25% {
+        transform: translateY(-10px);
+        color: #ffffff; /* Slightly different color */
+    }
+    50% {
+        transform: translateY(0);
+        color: #67272B;
+    }
+    75% {
+        transform: translateY(-10px);
+        color: #00bfae; /* Another color */
+    }
+    100% {
+        transform: translateY(0);
+        color: #67272B;
+    }
+}
